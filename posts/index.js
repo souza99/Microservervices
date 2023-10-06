@@ -23,6 +23,7 @@ app.post('/posts', async (req, res) => {
     title
   };
 
+  //Comentar o axios.post para não dar problema enquanto esse serviço não estiver rodando
   await axios.post('http://localhost:4005/events', {
     type: 'PostCreated',
     data: {
